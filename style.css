@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Globals */
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Lato';
+  font-weight: 300;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Lato';
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+}
+
+/* section {
+  height: 60vh;
+} */
+
+header {
+  width: 100%;
+  height: 15vh;
+}
+
+img {
+  height: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+header .header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header *{
+  height: 100%;
+}
+
+header .header .logo {
+  padding: .5rem 2rem;
+}
+
+header .header .CTA {
+  padding: 2rem;
+}
+
+header .header .CTA .call-to-action {
+  padding: .5rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  border: none;
+  background-image: linear-gradient(90deg, #a00015, #5c0000);
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Navigation */
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #d8d8d8;
+  z-index: 1;
+}
+
+nav .nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .nav a {
+  color: #000;
+  border-left: 1px solid #5a5a5a;
+  border-right: 1px solid #5a5a5a;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .nav a:hover {
+  background-color: #949494;
+  transition: background-color .5s;
+}
+
+nav .nav .nav-item {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+/* Banner */
+
+.banner {
+  background: #f0dada; 
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+
+.banner .slider {
+  background-color: white;
+  height: 100%;
+  width: 80%;
+  position: relative;
+}
+
+.banner .slider .slide {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.banner .slider .slide .image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+.banner .slider .slide img {
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 1.5rem #0000005d;
+}
+
+/* About Us */
+
+.about-us {
+  background-image: linear-gradient(150deg, #570000, #ff0000);
+  background-size: cover;
+  background-position: center;
+}
+
+.about-us .about-us-container {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-us .about-us-container .card {
+  text-align: center;
+  margin: 0 2rem;
+  background-color: #3d001c;
+  color: #fff;
+  padding: 1rem;
+
+}
+
+.about-us .about-us-container .card h3 {
+  font-size: 2.5rem;
+}
+
+.about-us .about-us-container .card p {
+  font-size: 1.5rem;
+}
+
+/* Contacts */
+
+.contacts {
+  background-image: linear-gradient(150deg,#360000, #6e0025);
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+}
+
+.contacts .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts .contact-info {
+  color: white;
+  padding: 3rem;
+  text-align: left;
+}
+
+.contacts .contact-info a {
+  color: white;
+}
+
+.contacts .contact-form {
+  color: white;
+}
+
+.contacts .contact-form form {
+  background-color: #0000005d;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts .contact-form form input {
+  width: 100%;
+}
+
+.contacts .contact-form form textarea {
+  min-width: 100%;
+  min-height: 20rem;
+  padding: 10px;
+}
+
+/* media */
+
+@media (max-width: 768px) {
+  .about-us .about-us-container {
+    flex-direction: column;
+  }
+  .banner .slider {
+    width: 100%;
+  }
+  .banner .slider .slide img {
+    width: 100%;
+  }
+
+  .contacts {
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 768px) {
+  .about-us .about-us-container {
+    padding: 1rem;
+  }
+  .about-us .about-us-container .card {
+    margin: 0;
+  }
+}

@@ -246,11 +246,20 @@ nav .nav .nav-item {
     grid-template-columns: auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 425px) {
+  nav .nav .nav-item {
+    font-size: 1.3rem;
+  }
+
   .about-us .about-us-container {
     padding: 1rem;
   }
+  
   .about-us .about-us-container .card {
     margin: 0;
+  }
+  
+  .CTA {
+    display: none;
   }
 }

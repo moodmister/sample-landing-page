@@ -116,7 +116,8 @@ nav .nav .nav-item {
   background: #f0dada; 
   display: flex;
   justify-content: center;
-  height: 60vh;
+  height: 80vh;
+  padding: 3rem 0;
 }
 
 .banner .slider {
@@ -128,6 +129,7 @@ nav .nav .nav-item {
 
 .banner .slider .slide {
   background-color: transparent;
+  justify-content: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
